@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="scripts/ready.js"></script>
+    <script src="scripts/fetchText.js"></script>
+  </head>
+
+  <body>
+    <h1>Fetch Text</h1>
+
+    <p>
+      Write some JavaScript to fetch a page of text when the user clicks the
+      links, below. Once you have fetched the new page of text, insert it into
+      the DOM.
+    </p>
+
+    <p>
+      You will need to bind an event listener to links with the class
+      <code>page</code>. Prevent the default action, fetch the contents
+      of the text document, and then, insert the contents into the page, when
+      a user clicks one of the following links.
+    </p>
+
+    <ul>
+      <li><a class="page" href="text/page1.txt">Page 1</a></li>
+      <li><a class="page" href="text/page2.txt">Page 2</a></li>
+      <li><a class="page" href="text/page3.txt">Page 3</a></li>
+    </ul>
+
+    <div id="main" class="code">
+    </div>
+  </body>
+</html>

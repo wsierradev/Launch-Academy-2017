@@ -1,0 +1,9 @@
+Elevator Pitch
+
+A repository of arcades with a list of games for each arcade.
+Users can add arcades and add games to each arcade.
+Arcades contain pertinent information like list of games and location
+info.(Hours of operation, Whether it is open, etc.)
+Users can search for arcades in their area and find out
+out what games are there.
+Users can click on a game in an an arcade and find out info about that game.

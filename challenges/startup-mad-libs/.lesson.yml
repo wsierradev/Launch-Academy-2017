@@ -1,0 +1,7 @@
+---
+title: "Startup Mad-Libs"
+type: "exercise"  # challenge, exercise, article, video
+description: "Write your elevator pitch for your flashy new Startup."
+tags: "javascript, strings"
+ignore:
+- "startup-mad-libs.md"

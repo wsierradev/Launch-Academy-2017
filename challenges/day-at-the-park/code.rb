@@ -1,0 +1,11 @@
+#Your code goes here
+size = "medium"
+who = "Derrick"
+color = "blue"
+how_cold = "ice cold"
+crazy_or_calm = "crazy"
+puts "I got a " + size + " sundae. Sooooo good."
+puts who + " always screams the loudest on a ride, the big baby."
+puts "The most delicious flavor of cotton candy is " + color + ", but I'm not sure what flavor that actually is."
+puts "Nearly froze my you-know-what's off. The water was " + how_cold + "."
+puts "Give me " + crazy_or_calm + " rides any day. The wilder the better."

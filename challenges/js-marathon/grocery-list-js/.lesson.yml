@@ -1,0 +1,11 @@
+---
+title: "GroceryList.js"
+type: "challenge"  # challenge, exercise, article, video
+description: "Lesson Description."
+tags: "javascript, systems-check"
+ignore:
+- "images"
+- "grocery-list-js.md"
+- "public/all.js"
+- "node_modules"
+- "Gemfile.lock"

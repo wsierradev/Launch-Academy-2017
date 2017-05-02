@@ -1,0 +1,6 @@
+---
+title: "Fetch API Practice"
+type: "exercise"
+description: "Practice using fetch to retrieve resources from server."
+ignore:
+- "fetch-api-practice.md"

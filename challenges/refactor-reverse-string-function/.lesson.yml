@@ -1,0 +1,7 @@
+---
+title: "Refactor Reverse String Function"
+type: "exercise"  # challenge, exercise, article, video
+description: "Take a stab at refactoring some old ES5 code."
+tags: "javascript, es6"
+ignore:
+- "refactor-reverse-string-function.md"

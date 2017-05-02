@@ -1,0 +1,7 @@
+---
+title: "French Toast Expedition"
+type: "exercise"  # challenge, exercise, article, video
+description: "Calculate the cost of ingredients for French Toast."
+tags: "javascript, variables, operations"
+ignore:
+- "french-toast-expedition.md"

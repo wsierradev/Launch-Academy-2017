@@ -1,0 +1,7 @@
+---
+title: "Automat.js"
+type: "challenge"  # challenge, exercise, article, video
+description: "Simulate an old-school Automat lunch counter."
+tags: "javascript, arrays"
+ignore:
+- "automat-js.md"

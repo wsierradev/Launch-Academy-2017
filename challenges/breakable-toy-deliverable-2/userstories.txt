@@ -1,0 +1,192 @@
+*User Stories*
+
+Essential
+
+1.  Basic CRUD functionality/Registration
+
+     As an unregistered user
+     I want to register
+     So that I can contribute to the site
+
+  [x] I can go to the home page
+  [x] Clicking on register takes me to registration form
+  [x] I must fill out all required details(tbd) to register
+  [-] I can fill out optional details(tbd)
+  [x] Clicking on Submit button successfully registers new user
+
+    As a registered user
+    I want to submit an arcade
+    So that other users know where it is
+
+  [x] I can go to the submit arcade page
+  [x] Clicking on submit arcade button takes me to submit arcade form
+  [x] I must fill out required details (name and address)
+  [x] Clicking submit button successfully adds new arcade
+
+    As a user
+    I want to see a list of arcades
+    So I know what arcades are out there
+
+  [x] I can go to the home page and click on arcades
+  [x] Clicking on arcades brings up a list of arcades by state
+
+    As a user
+    I want to see a list of games an arcade has
+    So I know what cool games are available
+
+  [x] I can go to the home page and click on arcades
+  [x] Clicking on arcades brings up a list of arcades by state
+  [x] Clicking on an arcade brings up a list of games at that arcade
+
+    As a registered user
+    I want to add a game to an arcade
+    So that people will know what games an arcade has
+
+  [x] I can go to a specific arcade's page
+  [x] Clicking on add game takes you to add game page
+  [x] I must fill out required details (name, working?, quantity etc.)
+  [x] Confirming your entry will add it to the list of games to that arcade
+
+    As a user
+    I want to the option to say whether a game is broken or no longer at an arcade
+    So people don't waste their time and go to an arcade for a game they can't play.
+
+  [x] I can go to an arcade's page see a list of games
+  [ ] Each game has the option to be broken or gone
+  [ ] Clicking on that link adds to a tally that triggers when a set number of votes is hit(5 likely)
+  [ ] After trigger hits game will be shown as either broken or working depending on majority of votes.(upvote and downvote initially)
+  [ ] If gone is majority game will be deleted from arcade.
+
+
+2.  Search functionality
+
+    As a user
+    I want to search for an arcade
+    So I can play cool games
+
+  [ ] I can search for an arcade in any page by using the search bar in the top bar and filling in the name of the arcade
+  [ ] Clicking the submit button takes me to a page showing a list of arcades matching my search criteria
+
+    As a user
+    I want to search for a game
+    So I can know if an arcade near me has it
+
+  [ ] I can search for a game in any page by using the search bar and filling in the name
+  [ ] Clicking search button takes me to a page showing a list of games
+  [ ] Clicking a game takes me to a page showing a list of arcades that has that game
+
+3.  Api Integration
+
+    As a user
+    I want to click on a game and get its info
+    So I can know about games I don't know about
+
+  [ ] Clicking on an arcade brings up a list of games at that arcade
+  [ ] Clicking on a game brings up info about the game (supplied by giant bomb or gamesdb api)
+
+    As a user
+    I want to see a map of arcades
+    So I know where they're all at
+
+  [ ] Going to the home page brings up a map of all entered arcades.(google maps)
+  [ ] Completing a search brings up a map of arcades matching my search criteria(google maps)
+
+    As a user
+    I want basic info on an arcade
+    So I know when it opens/closes and its phone number.
+
+  [ ] Going to an arcade's page brings up basic info(hours of operation, phone #, etc [supplied by google api])
+
+4.  React implementation
+
+    As a user
+    I want a game or arcade to autocomplete when I begin typing
+    Because I'm lazy
+
+  [ ] Searching for a game or arcade should bring up a list matching the first few keystrokes
+  [ ] Clicking on an arcade or game in the list should bring up the corresponding page
+
+    As a user
+    I want to browse by the subsection of arcade game
+    So I can find what I want faster
+
+  [ ] Going to an arcade's page brings up a list of arcade platforms(arcade, pinball, other) and a full list of games
+  [ ] Clicking on one of the subsections will automatically bring up that subsections list of games for that arcade
+
+    As a user
+    I want to browse arcades by state
+    So I can find what I want faster
+
+  [ ] Going to arcades page brings up a map of arcades
+  [ ] Clicking on a state on the map will automatically bring up arcades in that state
+
+    As a user
+    I want to sort the list of games an arcade has
+    So I can find things faster
+
+  [ ] Going to an arcade's page brings up a list of games with sorting options(name, working, quantity, platform etc.)
+  [ ] Clicking one of these options automatically sorts the page by that option
+
+5.  Admin Functionality
+
+    As a registered user
+    I want to have administrative permissions
+    So I can moderate and delete content
+
+  [ ] Registered user has ability to obtain admin status
+  [ ] Admin can add, edit or delete any arcade, game or image by visiting the corresponding page
+
+Non-Essential/Extras
+
+1.  Photos
+
+    As a user
+    I want to see photos of an arcade
+    So I know what the arcade looks like
+
+  [ ] Going to an arcade's page brings up a gallery of photos(initially supplied by google maps api)
+  [ ] Clicking on a picture blows the picture up full size
+
+    As a registered user
+    I want to upload photos of an arcade
+    So everyone can see how cool my arcade is
+
+  [ ] Going to an arcade's page brings up an option to upload a photo of the arcade
+  [ ] After supplying an image and hitting submit the image will be viewable in the gallery of that arcade page
+
+2. Geolocation
+
+    As a user
+    I want to automatically see arcades in my area
+    So I don't have to bother searching for arcades
+
+  [ ] If location is enabled going to the home page brings up a list of arcades
+  in that users area within a predetermined radius (10-25 mi?)
+  [ ] Clicking on any arcade brings you to the arcades page
+
+3. Recent additions
+
+    As a user
+    I want to see the newest additions to the site
+    So I know what new arcades are out there and what games have been added
+
+  [ ] Going to the home page brings up a list of recently added arcades and games(list of five for each)
+  [ ] Clicking on either arcade or game will take you to its corresponding page
+
+4. Subscriptions/Email/Actionmailer
+
+    As a registered user
+    I want to subscribe to an arcade
+    So I can get updates on what games have been added or removed
+
+  [ ] Going to an arcade's page brings up a button to subscribe
+  [ ] Clicking that link will subscribe a registered user to that arcade
+  [ ] Subscribed users will get updates when a game has been added or removed from that arcade(actionmailer)
+
+    As an admin
+    I want to get updates whenever a change is made on the site
+    So I can easily observe and moderate as needed
+
+  [ ] Admin will get a email update whenever a game or arcade is added
+  [ ] Admin will get a email update whenever a game is removed or arcade closes down
+  [ ] Admin will get a email update whenever a photo is added to an arcade's page

@@ -1,0 +1,7 @@
+---
+title: "JS Print to Console"
+type: "exercise"  # challenge, exercise, article, video
+description: "Document how to use the console.log() function."
+tags: "javascript"
+ignore:
+- "js-print-to-console.md"

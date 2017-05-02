@@ -1,0 +1,9 @@
+---
+title: "JS Fetch Challenge"
+type: "challenge"  # challenge, exercise, article, video
+description: "Practice using the JavaScript Fetch API."
+tags: "javascript, fetch"
+ignore:
+- "images/*"
+- "text/*"
+- "js-fetch-challenge.md"

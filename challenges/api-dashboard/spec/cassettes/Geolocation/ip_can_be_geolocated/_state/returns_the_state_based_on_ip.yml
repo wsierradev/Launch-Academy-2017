@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://freegeoip.net/json/8.8.8.8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - freegeoip.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Vary:
+      - Origin
+      X-Database-Date:
+      - Thu, 05 Jan 2017 01:32:52 GMT
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9989'
+      X-Ratelimit-Reset:
+      - '62'
+      Date:
+      - Thu, 02 Feb 2017 17:54:22 GMT
+      Content-Length:
+      - '247'
+    body:
+      encoding: UTF-8
+      string: '{"ip":"8.8.8.8","country_code":"US","country_name":"United States","region_code":"CA","region_name":"California","city":"Mountain
+        View","zip_code":"94035","time_zone":"America/Los_Angeles","latitude":37.386,"longitude":-122.0838,"metro_code":807}
+
+'
+    http_version: 
+  recorded_at: Thu, 02 Feb 2017 17:54:15 GMT
+recorded_with: VCR 3.0.3

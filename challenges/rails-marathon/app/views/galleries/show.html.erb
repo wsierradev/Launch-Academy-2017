@@ -1,0 +1,13 @@
+<h1><%=@gallery.name%></h1>
+<p>
+  <%=@gallery.city%>
+  <%=@gallery.state%>
+  <%=@gallery.zipcode%>
+  <%=@gallery.description%>
+</p>
+
+<% @paintings.each do |painting| %>
+  <%= painting.new %>
+<% end %>
+
+<% link_to "Add Galley", new_gallery_painting_path(@gallery) %>

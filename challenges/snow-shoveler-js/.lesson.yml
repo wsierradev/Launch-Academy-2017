@@ -1,0 +1,7 @@
+---
+title: "Snow Shoveler JS"
+type: "exercise"  # challenge, exercise, article, video
+description: "Create an app to help you calculate what to charge your clients."
+tags: "javascript, booleans, conditionals"
+ignore:
+- "snow-shoveler-js.md"

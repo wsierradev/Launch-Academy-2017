@@ -1,0 +1,7 @@
+---
+title: "JS Simple Page Manipulation"
+type: "exercise"  # challenge, exercise, article, video
+description: "Learn how to update the page with JavaScript."
+tags: "javascript, dom-manipulation"
+ignore:
+- "js-simple-page-manipulation.md"

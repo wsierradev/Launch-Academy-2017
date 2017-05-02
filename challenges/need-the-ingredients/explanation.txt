@@ -1,0 +1,9 @@
+
+curl --data "ingredient=3+tablespoons+good+olive+oil" http://localhost:4567/ingredients
+
+** '--data' because it's a POST
+** the string with an equals sign is the params hash key-value pair
+** pass in spaces as plus signs
+** ingredient refers back to the variable we created in our server file
+** the url is where we are POSTing to
+** individual curl requests can also be joined with an ampersand inside the quotes

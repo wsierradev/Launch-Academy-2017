@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Articles</title>
+  </head>
+
+  <body>
+    <h1> <%= @error %> </h1>
+    <h3>Articles</h3>
+    <h4>Submit new article:</h4>
+    <br>
+
+    <form action="/articles/new" method="post">
+     <label for="title">Article Title:  </label>
+     <input type="text" id="title" name="title" >
+     <br><br>
+
+
+     <label for="url">Article URL:  </label>
+     <input type="url" id="url" name="url" >
+     <br><br>
+
+     <label for="description">Article Description:  </label>
+     <input type="text" id="description" name="description" >
+     <br><br>
+
+     <input type="submit">
+     <br><br>
+
+    </form>
+
+    <a href="/articles">Articles List</a>
+
+  </body>
+  </html>

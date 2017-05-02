@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="scripts/ready.js"></script>
+  </head>
+
+  <body>
+    <h1>Document Ready</h1>
+
+    <p>
+      One of the tricky aspects of JavaScript, especially when manipulating the
+      DOM, is making sure the page has loaded before executing JavaScript.
+    </p>
+
+    <p>
+      Your task is to create a function called <code>ready()</code> which will
+      return a <strong>Promise</strong>. This Promise will resolve
+      when the <code>document.readyState</code> has changed from
+      <code>loading</code> to some other state. The different states of
+      <code>document.readyState</code> are:
+    </p>
+
+    <ul>
+      <li><code>loading</code></li>
+      <li><code>interactive</code></li>
+      <li><code>complete</code></li>
+    </ul>
+
+    <p>
+      You will see the text below change from "Document is loading...", to
+      "Document has loaded!" after you have implemented the <code>ready()</code>
+      Promise correctly.
+    </p>
+
+    <p>
+      <strong>Hint:</strong> an event listener on <code>readystatechange</code>
+      could be helpful, here.
+    </p>
+
+    <div id="main">
+      Document is loading...
+    </div>
+
+    <script>
+      ready().then(() => {
+        console.log(document.readyState)
+        let mainElement = document.getElementById('main')
+        mainElement.innerHTML = 'Document has loaded!'
+      })
+    </script>
+  </body>
+</html>

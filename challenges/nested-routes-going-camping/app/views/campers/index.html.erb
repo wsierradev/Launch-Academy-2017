@@ -1,0 +1,9 @@
+<h1><%= @title %></h1>
+
+<ul>
+  <% @campers.each do |camper| %>
+    <li>
+      <%= link_to camper.name, camper_supplies_path(supplies) %>
+    </li>
+  <% end %>
+</ul>

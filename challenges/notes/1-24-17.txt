@@ -1,0 +1,6 @@
+* everything is an object
+* private - blocks pry and other users from accessing or changing
+  comes at the end of the class
+* identify the relationships between classes
+* reduce/inject read docs
+poodr book sandi metz../

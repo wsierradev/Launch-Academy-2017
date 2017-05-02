@@ -1,0 +1,7 @@
+---
+title: "ToDo.js"
+type: "challenge"  # challenge, exercise, article, video
+description: "Create a ToDo list in HTML and JavaScript."
+tags: "javascript, system-check"
+ignore:
+- "todo-js.md"

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Page Manipulation</h1>
+
+    <div>
+      With some simple JavaScript we can select and change parts of the page.
+    </div>
+
+    <div class="code">
+      // select the element we want to change
+      let mainDiv = document.getElementById('main');
+
+      // reassign the contents within the element
+      mainDiv.innerHTML = 'I am a JavaScript Wizard!';
+    </div>
+
+    <div>
+      The <code>div</code> element below has an id attribute of <code>'main'</code>.
+      Write some JavaScript to change it.
+    </div>
+
+    <div id="main">Change me!</div>
+  </body>
+</html>

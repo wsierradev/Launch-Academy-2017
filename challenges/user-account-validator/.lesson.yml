@@ -1,0 +1,7 @@
+---
+title: "User Account Validator"
+type: "exercise"  # challenge, exercise, article, video
+description: "Learn to create classes that raise exceptions, and handle them."
+tags: "ruby, exceptions"
+ignore:
+- "user-account-validator.md"

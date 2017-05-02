@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Grocery List</title>
+  </head>
+
+  <body>
+    <h1>Grocery List</h1>
+    <h2>Item Amount</h2>
+
+    <ul>
+      <% @list.each do |item| %>
+        <li>
+          <a href="/grocery-list/:grocery_item"><%= item["name"] %> <%= item["quantity"] %></a>
+        </li>
+      <% end %>
+    </ul>
+
+    <form action="/grocery-list" method="post">
+      <label for="grocery_item">Name: </label>
+      <input type="text" name="grocery_item" id="grocery_item"/ required>
+
+      <label for="item_quantity">Quantity: </label>
+      <input placeholder="<%=@previous_quantity%>" type="number" name="item_quantity" id="item_quantity" value="item_quantity"/>
+
+      <input type="submit" value="Add" />
+    </form>
+
+  </body>
+</html>
